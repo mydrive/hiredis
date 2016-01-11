@@ -64,7 +64,7 @@ add_subdirectory(examples)
 
 # add test
 enable_testing()
-add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND} --verbose)
+add_custom_target(check-hiredis COMMAND ${CMAKE_CTEST_COMMAND} --verbose)
 
 add_executable(${PROJECT_NAME}-test "${CMAKE_CURRENT_SOURCE_DIR}/test.c")
 
